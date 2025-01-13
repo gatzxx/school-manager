@@ -1,4 +1,4 @@
-import {navigationList} from "../routes/navigationList.ts";
+import {navigationList} from "../../routes/navigationList.ts";
 import {Link, Outlet} from "react-router-dom";
 
 export function Layout() {
