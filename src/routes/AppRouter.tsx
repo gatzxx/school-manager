@@ -1,7 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import {Layout} from "../components/Layout.tsx";
-import {MainPage} from "../pages/MainPage.tsx";
-import {GradesPage} from "../pages/GradesPage.tsx";
+import {MainPageLazy} from "../pages/MainPage/MainPage.lazy.tsx";
+import {GradesPageLazy} from "../pages/GradesPage/GradesPage.lazy.tsx";
+import {NotFoundPageLazy} from "../pages/NotFoundPage/NotFoundPage.lazy.tsx";
 
 const router = createBrowserRouter([
     {
@@ -10,12 +11,16 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <MainPage />,
+                element: <MainPageLazy />,
             },
             {
                 path: "grades",
-                element: <GradesPage />,
-            }
+                element: <GradesPageLazy />,
+            },
+            {
+                path: "*",
+                element: <NotFoundPageLazy />,
+            },
         ],
     },
 ])
