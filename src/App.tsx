@@ -1,10 +1,7 @@
 import './App.css'
 
-export function App() {
+import {AppRouter} from "./routes/AppRouter.tsx";
 
-    return (
-        <div>
-            XXX
-        </div>
-    )
+export function App() {
+    return <AppRouter/>
 }
