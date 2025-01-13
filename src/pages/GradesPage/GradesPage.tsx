@@ -1,4 +1,4 @@
-export function GradesPage() {
+export default function GradesPage() {
     return (
         <div>
             GRADES
