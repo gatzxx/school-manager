@@ -1,7 +1,3 @@
 export default function GroupsPage() {
-    return (
-        <div>
-            GROUPS
-        </div>
-    )
+    return <div>GROUPS</div>
 }

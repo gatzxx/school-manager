@@ -1,7 +1,3 @@
 export default function ParentsPage() {
-    return (
-        <div>
-            PARENTS
-        </div>
-    )
+    return <div>PARENTS</div>
 }

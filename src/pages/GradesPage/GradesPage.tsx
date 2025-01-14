@@ -1,7 +1,3 @@
 export default function GradesPage() {
-    return (
-        <div>
-            GRADES
-        </div>
-    )
+    return <div>GRADES</div>
 }

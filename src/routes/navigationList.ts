@@ -1,4 +1,4 @@
-import {routePath} from "./routePath.ts";
+import { routePath } from './routePath.ts'
 
 export interface NavigationType {
     path: string
@@ -8,26 +8,26 @@ export interface NavigationType {
 export const navigationList: NavigationType[] = [
     {
         path: routePath.MAIN,
-        title: 'MAIN'
+        title: 'MAIN',
     },
     {
         path: routePath.GRADES,
-        title: 'GRADES'
+        title: 'GRADES',
     },
     {
         path: routePath.GROUPS,
-        title: 'GROUPS'
+        title: 'GROUPS',
     },
     {
         path: routePath.STUDENTS,
-        title: 'STUDENTS'
+        title: 'STUDENTS',
     },
     {
         path: routePath.TEACHERS,
-        title: 'TEACHERS'
+        title: 'TEACHERS',
     },
     {
         path: routePath.PARENTS,
-        title: 'PARENTS'
-    }
+        title: 'PARENTS',
+    },
 ]
