@@ -13,12 +13,12 @@ interface ErrorBoundaryState {
 class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
     constructor(props: ErrorBoundaryProps) {
         super(props)
-        this.state = { hasError: false }
+        this.state = {hasError: false}
     }
 
     static getDerivedStateFromError(error: Error): ErrorBoundaryState {
         console.error("Error caught by ErrorBoundary:", error)
-        return { hasError: true }
+        return {hasError: true}
     }
 
     componentDidCatch(error: Error, info: ErrorInfo): void {
@@ -30,7 +30,7 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
         const {children} = this.props
 
         if (hasError) {
-            return <Suspense fallback={<Loader />}> <ErrorPageLazy /> </Suspense>
+            return <Suspense fallback={<Loader/>}> <ErrorPageLazy/> </Suspense>
         }
 
         return children

@@ -17,12 +17,12 @@ export const routeConfig: RouteObject[] = [
     {
         path: routePath.MAIN,
         element:
-            <Suspense fallback={<Loader/> }>
+            <Suspense fallback={<Loader/>}>
                 <Layout/>
             </Suspense>
         ,
         errorElement:
-            <Suspense fallback={<Loader/> }>
+            <Suspense fallback={<Loader/>}>
                 <ErrorPageLazy/>
             </Suspense>,
         children: [

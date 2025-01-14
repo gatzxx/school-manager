@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material'
+import {createTheme} from '@mui/material'
 import {dark, light} from "../palettes/palettes.ts";
 
 export type AppTheme = 'light' | 'dark'

@@ -1,3 +1,4 @@
+import {useTranslation} from "react-i18next";
 import { AppBar, Button, Toolbar, Typography, IconButton, Box } from "@mui/material"
 import {useTheme} from "../../../hooks/useTheme/useTheme.ts";
 import { navigationList } from "../../../routes/navigationList"
@@ -6,8 +7,18 @@ import SchoolIcon from "@mui/icons-material/School"
 import ContrastIcon from '@mui/icons-material/Contrast';
 
 export function Header() {
+    const {t, i18n} = useTranslation()
     const { theme, toggleTheme } = useTheme()
     const location = useLocation()
+
+    const toggleLanguage = async () => {
+        try {
+            await i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en')
+        } catch (error) {
+            console.error('Error switching language:', error)
+        }
+    }
+
 
     return (
         <AppBar position="static" sx={{
@@ -16,7 +27,7 @@ export function Header() {
         }}>
             <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <Typography variant="h6" sx={{ display: 'flex', alignItems: 'center', color: theme.palette.primary.dark }}>
-                    School Manager
+                    {t('School Manager')}
                     <SchoolIcon sx={{ marginLeft: 1 }} />
                 </Typography>
 
@@ -33,6 +44,9 @@ export function Header() {
                         </Button>
                     ))}
                 </Box>
+                <Button onClick={toggleLanguage}>
+                    X
+                </Button>
 
                 <IconButton
                     onClick={toggleTheme}
