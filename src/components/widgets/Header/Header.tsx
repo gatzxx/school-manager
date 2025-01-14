@@ -1,12 +1,12 @@
 import { AppBar, Button, Toolbar, Typography, IconButton, Box } from "@mui/material"
-import SchoolIcon from "@mui/icons-material/School"
+import {useTheme} from "../../../hooks/useTheme/useTheme.ts";
 import { navigationList } from "../../../routes/navigationList"
-import ContrastIcon from '@mui/icons-material/Contrast';
 import { Link, useLocation } from "react-router-dom"
-import {useThemeSwitcher} from "../../../hooks/useThemeSwitcher/useThemeSwitcher.ts";
+import SchoolIcon from "@mui/icons-material/School"
+import ContrastIcon from '@mui/icons-material/Contrast';
 
 export function Header() {
-    const { theme, toggleTheme } = useThemeSwitcher()
+    const { theme, toggleTheme } = useTheme()
     const location = useLocation()
 
     return (
@@ -15,7 +15,7 @@ export function Header() {
             color: theme.palette.primary.contrastText,
         }}>
             <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <Typography variant="h6" sx={{ display: 'flex', alignItems: 'center' }}>
+                <Typography variant="h6" sx={{ display: 'flex', alignItems: 'center', color: theme.palette.primary.dark }}>
                     School Manager
                     <SchoolIcon sx={{ marginLeft: 1 }} />
                 </Typography>
@@ -35,11 +35,10 @@ export function Header() {
                 </Box>
 
                 <IconButton
-                    color="primary"
                     onClick={toggleTheme}
-                    sx={{ ml: 2 }}
+                    sx={{ ml: 2}}
                 >
-                    <ContrastIcon sx={{color: theme.palette.primary.contrastText, size: 50}} />
+                    <ContrastIcon sx={{color: theme.palette.primary.dark, size: 50}} />
                 </IconButton>
             </Toolbar>
         </AppBar>
