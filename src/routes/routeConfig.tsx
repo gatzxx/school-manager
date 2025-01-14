@@ -10,18 +10,19 @@ import {StudentsPageLazy} from "../pages/StudentsPage/StudentsPage.lazy.tsx";
 import {TeachersPageLazy} from "../pages/TeachersPage/TeachersPage.lazy.tsx";
 import {ParentsPageLazy} from "../pages/ParentsPage/ParentsPage.lazy.tsx";
 import {ErrorPageLazy} from "../pages/ErrorPage/ErrorPage.lazy.tsx";
+import {Loader} from "../components/Loader/Loader.tsx";
 import {routePath} from "./routePath.ts";
 
 export const routeConfig: RouteObject[] = [
     {
         path: routePath.MAIN,
         element:
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loader/> }>
                 <Layout/>
             </Suspense>
         ,
         errorElement:
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loader/> }>
                 <ErrorPageLazy/>
             </Suspense>,
         children: [

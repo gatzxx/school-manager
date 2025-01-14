@@ -1,5 +1,6 @@
 import React, {ErrorInfo, Suspense} from "react"
 import {ErrorPageLazy} from "../../pages/ErrorPage/ErrorPage.lazy.tsx";
+import {Loader} from "../../components/Loader/Loader.tsx";
 
 interface ErrorBoundaryProps {
     children: React.ReactNode
@@ -29,7 +30,7 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
         const {children} = this.props
 
         if (hasError) {
-            return <Suspense fallback=''> <ErrorPageLazy /> </Suspense>
+            return <Suspense fallback={<Loader />}> <ErrorPageLazy /> </Suspense>
         }
 
         return children
