@@ -5,6 +5,7 @@ import { navigationList } from "../../../routes/navigationList"
 import { Link, useLocation } from "react-router-dom"
 import SchoolIcon from "@mui/icons-material/School"
 import ContrastIcon from '@mui/icons-material/Contrast';
+import LanguageIcon from '@mui/icons-material/Language';
 
 export function Header() {
     const {t, i18n} = useTranslation()
@@ -44,9 +45,12 @@ export function Header() {
                         </Button>
                     ))}
                 </Box>
-                <Button onClick={toggleLanguage}>
-                    X
-                </Button>
+                <IconButton
+                    onClick={toggleLanguage}
+                    sx={{ ml: 2}}
+                >
+                    <LanguageIcon sx={{color: theme.palette.primary.dark, size: 50}}/>
+                </IconButton>
 
                 <IconButton
                     onClick={toggleTheme}
