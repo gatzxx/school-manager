@@ -1,7 +1,7 @@
 import {RouteObject} from "react-router-dom";
 import {Suspense} from "react";
 
-import {Layout} from "../components/Layout/Layout.tsx";
+import {Layout} from "../components/layout/Layout/Layout.tsx";
 import {MainPageLazy} from "../pages/MainPage/MainPage.lazy.tsx";
 import {GradesPageLazy} from "../pages/GradesPage/GradesPage.lazy.tsx";
 import {NotFoundPageLazy} from "../pages/NotFoundPage/NotFoundPage.lazy.tsx";
@@ -10,7 +10,7 @@ import {StudentsPageLazy} from "../pages/StudentsPage/StudentsPage.lazy.tsx";
 import {TeachersPageLazy} from "../pages/TeachersPage/TeachersPage.lazy.tsx";
 import {ParentsPageLazy} from "../pages/ParentsPage/ParentsPage.lazy.tsx";
 import {ErrorPageLazy} from "../pages/ErrorPage/ErrorPage.lazy.tsx";
-import {Loader} from "../components/Loader/Loader.tsx";
+import {Loader} from "../components/ui/Loader/Loader.tsx";
 import {routePath} from "./routePath.ts";
 
 export const routeConfig: RouteObject[] = [

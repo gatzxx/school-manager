@@ -1,6 +1,6 @@
 import {Box} from "@mui/material";
-import {Header} from "./Header.tsx";
-import {Main} from "./Main.tsx";
+import {Main} from "../../widgets/Main/Main.tsx";
+import {Header} from "../../widgets/Header/Header.tsx";
 
 export function Layout() {
 

@@ -1,6 +1,6 @@
 import React, {ErrorInfo, Suspense} from "react"
 import {ErrorPageLazy} from "../../pages/ErrorPage/ErrorPage.lazy.tsx";
-import {Loader} from "../../components/Loader/Loader.tsx";
+import {Loader} from "../../components/ui/Loader/Loader.tsx";
 
 interface ErrorBoundaryProps {
     children: React.ReactNode
