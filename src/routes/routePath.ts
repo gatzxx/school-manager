@@ -14,5 +14,5 @@ export const routePath: Record<AppRoutes, string> = {
     STUDENTS: '/students',
     TEACHERS: '/teachers',
     PARENTS: '/parents',
-    NOT_FOUND: '*'
+    NOT_FOUND: '*',
 }
