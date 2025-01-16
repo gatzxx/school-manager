@@ -16,7 +16,8 @@
         "fix:all": "pnpm run format && pnpm run lint:fix && pnpm run lint:styles:fix",
         "preview": "vite preview",
         "server": "json-server -w server/db.json -p 6969",
-        "start": "concurrently \"pnpm run server\"  \"pnpm dev\""
+        "start": "concurrently \"pnpm run server\"  \"pnpm dev\"",
+        "unit": "jest"
     },
     "dependencies": {
         "@emotion/react": "^11.14.0",
@@ -32,6 +33,7 @@
     },
     "devDependencies": {
         "@eslint/js": "^9.17.0",
+        "@types/jest": "^29.5.14",
         "@types/react": "^18.3.18",
         "@types/react-dom": "^18.3.5",
         "@types/react-router-dom": "^5.3.3",
@@ -41,15 +43,20 @@
         "concurrently": "^9.1.2",
         "eslint": "^9.17.0",
         "eslint-config-prettier": "^10.0.1",
+        "eslint-plugin-jest": "^28.11.0",
         "eslint-plugin-prettier": "^5.2.1",
         "eslint-plugin-react-hooks": "^5.0.0",
         "eslint-plugin-react-refresh": "^0.4.16",
         "globals": "^15.14.0",
+        "jest": "^29.7.0",
+        "jest-environment-jsdom": "29.7.0",
         "json-server": "1.0.0-beta.3",
         "prettier": "^3.4.2",
         "stylelint": "^16.13.1",
         "stylelint-config-standard": "^37.0.0",
         "stylelint-prettier": "^5.0.2",
+        "ts-jest": "^29.2.5",
+        "ts-node": "^10.9.2",
         "typescript": "~5.6.2",
         "typescript-eslint": "^8.18.2",
         "vite": "^6.0.5"
