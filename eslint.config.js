@@ -4,16 +4,20 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
 import prettier from 'eslint-config-prettier'
+import jestPlugin from 'eslint-plugin-jest'
 
 export default [
     {
-        ignores: ['dist', 'vite.config.ts'],
+        ignores: ['dist', 'vite.config.ts', 'jest.config.ts'],
     },
     {
         files: ['**/*.{ts,tsx}'],
         languageOptions: {
             ecmaVersion: 2020,
-            globals: globals.browser,
+            globals: {
+                ...globals.browser,
+                ...jestPlugin.environments.globals.globals,
+            },
             parser: tseslint.parser,
             parserOptions: {
                 project: './tsconfig.eslint.json',
@@ -22,6 +26,7 @@ export default [
         plugins: {
             'react-hooks': reactHooks,
             'react-refresh': reactRefresh,
+            jest: jestPlugin,
         },
         rules: {
             ...js.configs.recommended.rules,
@@ -32,6 +37,7 @@ export default [
                 { allowConstantExport: true },
             ],
             ...prettier.rules,
+            ...jestPlugin.configs.recommended.rules,
         },
     },
 ]
