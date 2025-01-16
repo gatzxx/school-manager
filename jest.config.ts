@@ -43,6 +43,9 @@ const config: Config = {
     // A map from regular expressions to paths to transformers
     transform: { '^.+\\.tsx?$': 'ts-jest' },
 
+    // A list of paths to modules that run some code to configure or set up the testing framework before each test
+    setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
+
     // Indicates whether the coverage information should be collected while executing the test
     // collectCoverage: false,
 
@@ -138,9 +141,6 @@ const config: Config = {
 
     // The paths to modules that run some code to configure or set up the testing environment before each test
     // setupFiles: [],
-
-    // A list of paths to modules that run some code to configure or set up the testing framework before each test
-    // setupFilesAfterEnv: [],
 
     // The number of seconds after which a test is considered as slow and reported as such in the results.
     // slowTestThreshold: 5,
