@@ -1,3 +1,23 @@
+import { useGetTeachersQuery } from '../../api/apiSlice/apiSlice.ts'
+import { Loader } from '../../components/ui/Loader/Loader.tsx'
+import { Teacher } from '../../store/types/types.ts'
+
 export default function TeachersPage() {
-    return <div>TEACHERS</div>
+    const { data: teachers, isLoading, isError } = useGetTeachersQuery()
+
+    if (isLoading) return <Loader />
+
+    if (isError) return <div>Error loading teachers</div>
+
+    if (!teachers || teachers.length === 0) return <div>No teachers found</div>
+
+    return (
+        <ul>
+            {teachers.map((teacher: Teacher) => (
+                <li key={teacher.id}>
+                    {teacher.name} {teacher.surname}
+                </li>
+            ))}
+        </ul>
+    )
 }
