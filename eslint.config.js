@@ -8,7 +8,7 @@ import jestPlugin from 'eslint-plugin-jest'
 
 export default [
     {
-        ignores: ['dist', 'vite.config.ts', 'jest.config.ts'],
+        ignores: ['dist', 'vite.config.ts', 'jest.config.ts', 'setupTests.ts'],
     },
     {
         files: ['**/*.{ts,tsx}'],

@@ -39,8 +39,7 @@ class ErrorBoundary extends React.Component<
         if (hasError) {
             return (
                 <Suspense fallback={<Loader />}>
-                    {' '}
-                    <ErrorPageLazy />{' '}
+                    <ErrorPageLazy />
                 </Suspense>
             )
         }

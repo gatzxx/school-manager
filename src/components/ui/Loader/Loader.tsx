@@ -1,6 +1,9 @@
 import { CircularProgress, Box } from '@mui/material'
+import { useTheme } from '../../../hooks/useTheme/useTheme.ts'
 
 export function Loader() {
+    const { theme } = useTheme()
+
     return (
         <Box
             sx={{
@@ -10,7 +13,10 @@ export function Loader() {
                 height: '100vh',
             }}
         >
-            <CircularProgress size={100} />
+            <CircularProgress
+                sx={{ color: theme.palette.primary.dark }}
+                size={100}
+            />
         </Box>
     )
 }

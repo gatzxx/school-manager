@@ -1,6 +1,8 @@
 import { Container, Typography } from '@mui/material'
 import { Outlet } from 'react-router-dom'
 import { useTheme } from '../../../hooks/useTheme/useTheme.ts'
+import { Suspense } from 'react'
+import { Loader } from '../../ui/Loader/Loader.tsx'
 
 export function MainSection() {
     const { theme } = useTheme()
@@ -14,7 +16,9 @@ export function MainSection() {
             }}
         >
             <Typography variant="h4" gutterBottom>
-                <Outlet />
+                <Suspense fallback={<Loader />}>
+                    <Outlet />
+                </Suspense>
             </Typography>
         </Container>
     )
