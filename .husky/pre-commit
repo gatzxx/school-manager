@@ -1,0 +1,19 @@
+pnpm run format:check || {
+  echo "Prettier check failed. Please run 'pnpm run format' to fix formatting issues."
+  exit 1
+}
+
+pnpm run lint || {
+  echo "ESLint check failed. Please run 'pnpm run lint:fix' to fix linting issues."
+  exit 1
+}
+
+pnpm run lint:styles || {
+  echo "Stylelint check failed. Please run 'pnpm run lint:styles:fix' to fix styling issues."
+  exit 1
+}
+
+pnpm run unit || {
+  echo "Unit tests failed. Please fix the failing tests."
+  exit 1
+}
