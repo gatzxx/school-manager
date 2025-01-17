@@ -8,7 +8,7 @@
         "esModuleInterop": true,
         "jsx": "react-jsx",
         "allowImportingTsExtensions": true,
-        "types": ["jest", "@testing-library/jest-dom"]
-    },
-    "include": ["./setupTests.ts"]
+        "types": ["jest", "@testing-library/jest-dom"],
+        "noEmit": true
+    }
 }

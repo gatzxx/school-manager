@@ -1,7 +1,7 @@
 import { createContext } from 'react'
 import { createAppTheme } from '../../theme/appTheme/appTheme.ts'
 
-interface ThemeContextProps {
+export interface ThemeContextProps {
     theme: ReturnType<typeof createAppTheme>
     toggleTheme: () => void
 }
