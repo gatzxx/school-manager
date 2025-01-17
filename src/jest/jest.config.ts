@@ -1,15 +1,6 @@
 import type { Config } from 'jest'
 
 const config: Config = {
-    // All imported modules in your tests should be mocked automatically
-    // automock: false,
-
-    // Stop running tests after `n` failures
-    // bail: 0,
-
-    // The directory where Jest should store its cached dependency information
-    // cacheDirectory: "C:\\Users\\ASUS\\AppData\\Local\\Temp\\jest",
-
     // Automatically clear mock calls, instances, contexts and results before every test
     clearMocks: true,
 
@@ -44,7 +35,19 @@ const config: Config = {
     transform: { '^.+\\.tsx?$': 'ts-jest' },
 
     // A list of paths to modules that run some code to configure or set up the testing framework before each test
-    setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
+    setupFilesAfterEnv: ['<rootDir>src/rtl/setupTests.ts'],
+
+    // The root directory that Jest should scan for tests and modules within
+    rootDir: '../../',
+
+    // All imported modules in your tests should be mocked automatically
+    // automock: false,
+
+    // Stop running tests after `n` failures
+    // bail: 0,
+
+    // The directory where Jest should store its cached dependency information
+    // cacheDirectory: "C:\\Users\\ASUS\\AppData\\Local\\Temp\\jest",
 
     // Indicates whether the coverage information should be collected while executing the test
     // collectCoverage: false,
@@ -127,9 +130,6 @@ const config: Config = {
 
     // Automatically restore mock state and implementation before every test
     // restoreMocks: false,
-
-    // The root directory that Jest should scan for tests and modules within
-    // rootDir: undefined,
 
     // A list of paths to directories that Jest should use to search for files in
     // roots: [

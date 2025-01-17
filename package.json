@@ -17,7 +17,7 @@
         "preview": "vite preview",
         "server": "json-server -w server/db.json -p 6969",
         "start": "concurrently \"pnpm run server\"  \"pnpm dev\"",
-        "unit": "jest",
+        "unit": "jest --config ./src/jest/jest.config.ts",
         "storybook": "storybook dev -p 6006 -c ./src/storybook",
         "build-storybook": "storybook build -c ./src/storybook",
         "prepare": "husky"
