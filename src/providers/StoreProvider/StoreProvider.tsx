@@ -1,11 +1,11 @@
 import { FC, ReactNode } from 'react'
 import { Provider } from 'react-redux'
 import { createStore } from '../../store/store/store.ts'
-import { StateType } from '../../store/types/types.ts'
+import { StateSchema } from '../../store/types/types.ts'
 
 interface StoreProviderProps {
     children: ReactNode
-    preloadedState?: StateType
+    preloadedState?: StateSchema
 }
 
 export const StoreProvider: FC<StoreProviderProps> = ({
