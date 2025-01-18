@@ -1,6 +1,6 @@
-import { useGetStudentsQuery } from '../../api/apiSlice/apiSlice.ts'
 import { Loader } from '../../components/ui/Loader/Loader.tsx'
 import { Student } from '../../store/types/types.ts'
+import { useGetStudentsQuery } from '../../api/apiSlice/studentsApi.ts'
 
 export default function StudentsPage() {
     const { data: students, isLoading, isError } = useGetStudentsQuery()

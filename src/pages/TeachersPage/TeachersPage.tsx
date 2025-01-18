@@ -1,6 +1,6 @@
-import { useGetTeachersQuery } from '../../api/apiSlice/apiSlice.ts'
 import { Loader } from '../../components/ui/Loader/Loader.tsx'
 import { Teacher } from '../../store/types/types.ts'
+import { useGetTeachersQuery } from '../../api/apiSlice/teachersApi.ts'
 
 export default function TeachersPage() {
     const { data: teachers, isLoading, isError } = useGetTeachersQuery()

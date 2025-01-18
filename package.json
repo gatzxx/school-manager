@@ -15,7 +15,7 @@
         "check:all": "pnpm run format:check && pnpm run lint && pnpm run lint:styles",
         "fix:all": "pnpm run format && pnpm run lint:fix && pnpm run lint:styles:fix",
         "preview": "vite preview",
-        "server": "json-server -w server/db.json -p 6969",
+        "server": "json-server -w server/db.json -p 1009",
         "app": "concurrently \"pnpm run server\"  \"pnpm dev\"",
         "unit": "jest --config ./src/jest/jest.config.ts",
         "storybook": "storybook dev -p 6006 -c ./src/storybook",
