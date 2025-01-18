@@ -22,10 +22,16 @@ School Manager is a modern web application designed to manage school-related dat
 
 - **React**
 - **TypeScript**
+- **Redux Toolkit** for state management
+- **RTK Query** for data fetching and caching
 - **Vite** (for fast development and builds)
 - **Material-UI (MUI)** for UI components
 - **i18next** for internationalization
 - **React Router** for navigation
+
+### Backend (Mock API)
+
+- **JSON Server**: A simple mock REST API for development and testing purposes.
 
 ### Testing
 
@@ -69,7 +75,7 @@ School Manager is a modern web application designed to manage school-related dat
 3. Start the development server:
 
     ```bash
-    pnpm run dev
+    pnpm run app
     ```
 
 4. Open your browser and navigate to [http://localhost:5173](http://localhost:5173).
@@ -159,12 +165,6 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## License
-
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
-
----
-
 ## Acknowledgments
 
 - **Vite** for the blazing-fast development experience.
@@ -179,6 +179,5 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 If you have any questions or suggestions, feel free to reach out:
 
 - **GitHub**: [gatzxx](https://github.com/gatzxx)
-- **Email**: murwoofmur@gmail.com
 
 Enjoy using **School Manager**! 🚀
