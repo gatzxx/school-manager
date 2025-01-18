@@ -1,3 +1,9 @@
 {
-    "School Manager": "Управление Школой"
+    "School Manager": "Управление Школой",
+    "Main": "Главная",
+    "Grades": "Классы",
+    "Groups": "Группы",
+    "Students": "Ученики",
+    "Teachers": "Учителя",
+    "Parents": "Родители"
 }

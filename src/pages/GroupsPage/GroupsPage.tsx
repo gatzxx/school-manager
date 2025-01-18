@@ -14,7 +14,7 @@ export default function GroupsPage() {
     return (
         <ul>
             {groups.map((group: Group) => (
-                <li key={group.id}>{group.group}</li>
+                <li key={group.id}>Group {group.group}</li>
             ))}
         </ul>
     )

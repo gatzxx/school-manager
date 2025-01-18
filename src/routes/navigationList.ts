@@ -7,27 +7,27 @@ export interface NavigationType {
 
 export const navigationList: NavigationType[] = [
     {
-        path: routePath.MAIN,
-        title: 'MAIN',
+        path: routePath.Main,
+        title: 'Main',
     },
     {
-        path: routePath.GRADES,
-        title: 'GRADES',
+        path: routePath.Grades,
+        title: 'Grades',
     },
     {
-        path: routePath.GROUPS,
-        title: 'GROUPS',
+        path: routePath.Groups,
+        title: 'Groups',
     },
     {
-        path: routePath.STUDENTS,
-        title: 'STUDENTS',
+        path: routePath.Students,
+        title: 'Students',
     },
     {
-        path: routePath.TEACHERS,
-        title: 'TEACHERS',
+        path: routePath.Teachers,
+        title: 'Teachers',
     },
     {
-        path: routePath.PARENTS,
-        title: 'PARENTS',
+        path: routePath.Parents,
+        title: 'Parents',
     },
 ]

@@ -13,7 +13,7 @@ import { routePath } from './routePath.ts'
 
 export const routeConfig: RouteObject[] = [
     {
-        path: routePath.MAIN,
+        path: routePath.Main,
         element: <Layout />,
         errorElement: <ErrorPageLazy />,
         children: [
@@ -22,27 +22,27 @@ export const routeConfig: RouteObject[] = [
                 element: <MainPageLazy />,
             },
             {
-                path: routePath.GRADES,
+                path: routePath.Grades,
                 element: <GradesPageLazy />,
             },
             {
-                path: routePath.GROUPS,
+                path: routePath.Groups,
                 element: <GroupsPageLazy />,
             },
             {
-                path: routePath.STUDENTS,
+                path: routePath.Students,
                 element: <StudentsPageLazy />,
             },
             {
-                path: routePath.TEACHERS,
+                path: routePath.Teachers,
                 element: <TeachersPageLazy />,
             },
             {
-                path: routePath.PARENTS,
+                path: routePath.Parents,
                 element: <ParentsPageLazy />,
             },
             {
-                path: routePath.NOT_FOUND,
+                path: routePath.Not_Found,
                 element: <NotFoundPageLazy />,
             },
         ],

@@ -1,18 +1,18 @@
 type AppRoutes =
-    | 'MAIN'
-    | 'GRADES'
-    | 'GROUPS'
-    | 'STUDENTS'
-    | 'TEACHERS'
-    | 'PARENTS'
-    | 'NOT_FOUND'
+    | 'Main'
+    | 'Grades'
+    | 'Groups'
+    | 'Students'
+    | 'Teachers'
+    | 'Parents'
+    | 'Not_Found'
 
 export const routePath: Record<AppRoutes, string> = {
-    MAIN: '/',
-    GRADES: '/grades',
-    GROUPS: '/groups',
-    STUDENTS: '/students',
-    TEACHERS: '/teachers',
-    PARENTS: '/parents',
-    NOT_FOUND: '*',
+    Main: '/',
+    Grades: '/grades',
+    Groups: '/groups',
+    Students: '/students',
+    Teachers: '/teachers',
+    Parents: '/parents',
+    Not_Found: '*',
 }
