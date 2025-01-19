@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { Teacher } from '../../store/types/types'
-import { api } from '../../constants/api'
+import { Teacher } from '../store/types/types.ts'
+import { api } from '../constants/api.ts'
 
 export const teachersApi = createApi({
     reducerPath: 'teachersApi',
@@ -8,7 +8,6 @@ export const teachersApi = createApi({
     endpoints: (builder) => ({
         getTeachers: builder.query<Teacher[], void>({
             query: () => 'teachers',
-            keepUnusedDataFor: 600,
         }),
     }),
 })

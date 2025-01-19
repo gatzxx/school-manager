@@ -31,7 +31,7 @@ export function LangSwitcher() {
     return (
         <IconButton onClick={toggleLanguage} sx={{ ml: 2 }}>
             <LanguageIcon
-                sx={{ color: theme.palette.primary.dark, size: 50 }}
+                sx={{ color: theme.palette.primary.main, size: 50 }}
             />
         </IconButton>
     )

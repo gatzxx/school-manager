@@ -1,8 +1,8 @@
-import { gradesApi } from '../../api/apiSlice/gradesApi'
-import { groupsApi } from '../../api/apiSlice/groupsApi'
-import { studentsApi } from '../../api/apiSlice/studentsApi.ts'
-import { teachersApi } from '../../api/apiSlice/teachersApi.ts'
-import { parentsApi } from '../../api/apiSlice/parentsApi.ts'
+import { gradesApi } from '../../api/gradesApi.ts'
+import { groupsApi } from '../../api/groupsApi.ts'
+import { studentsApi } from '../../api/studentsApi.ts'
+import { teachersApi } from '../../api/teachersApi.ts'
+import { parentsApi } from '../../api/parentsApi.ts'
 
 export interface StateSchema {
     [gradesApi.reducerPath]: ReturnType<typeof gradesApi.reducer>

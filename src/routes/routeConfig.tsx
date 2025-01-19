@@ -1,6 +1,6 @@
 import { RouteObject } from 'react-router-dom'
 
-import { Layout } from '../components/layout/Layout/Layout.tsx'
+import { Layout } from '../components/layout/Layout.tsx'
 import { MainPageLazy } from '../pages/MainPage/MainPage.lazy.tsx'
 import { GradesPageLazy } from '../pages/GradesPage/GradesPage.lazy.tsx'
 import { NotFoundPageLazy } from '../pages/NotFoundPage/NotFoundPage.lazy.tsx'

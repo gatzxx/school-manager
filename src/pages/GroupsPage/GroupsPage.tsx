@@ -1,6 +1,6 @@
 import { Loader } from '../../components/ui/Loader/Loader.tsx'
 import { Group } from '../../store/types/types.ts'
-import { useGetGroupsQuery } from '../../api/apiSlice/groupsApi.ts'
+import { useGetGroupsQuery } from '../../api/groupsApi.ts'
 
 export default function GroupsPage() {
     const { data: groups, isLoading, isError } = useGetGroupsQuery()

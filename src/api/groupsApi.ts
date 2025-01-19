@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { Group } from '../../store/types/types'
-import { api } from '../../constants/api'
+import { Group } from '../store/types/types.ts'
+import { api } from '../constants/api.ts'
 
 export const groupsApi = createApi({
     reducerPath: 'groupsApi',
@@ -8,11 +8,9 @@ export const groupsApi = createApi({
     endpoints: (builder) => ({
         getGroups: builder.query<Group[], void>({
             query: () => 'groups',
-            keepUnusedDataFor: 600,
         }),
         getGroupsByGradeId: builder.query<Group[], number>({
             query: (gradeId) => `groups?gradeId=${gradeId}`,
-            keepUnusedDataFor: 600,
         }),
     }),
 })

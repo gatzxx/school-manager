@@ -1,10 +1,10 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import { StateSchema } from '../types/types.ts'
-import { gradesApi } from '../../api/apiSlice/gradesApi.ts'
-import { groupsApi } from '../../api/apiSlice/groupsApi.ts'
-import { studentsApi } from '../../api/apiSlice/studentsApi.ts'
-import { teachersApi } from '../../api/apiSlice/teachersApi.ts'
-import { parentsApi } from '../../api/apiSlice/parentsApi.ts'
+import { gradesApi } from '../../api/gradesApi.ts'
+import { groupsApi } from '../../api/groupsApi.ts'
+import { studentsApi } from '../../api/studentsApi.ts'
+import { teachersApi } from '../../api/teachersApi.ts'
+import { parentsApi } from '../../api/parentsApi.ts'
 
 const rootReducer = combineReducers({
     [gradesApi.reducerPath]: gradesApi.reducer,

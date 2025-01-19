@@ -10,11 +10,11 @@ export function ThemeSwitcher() {
         <IconButton onClick={toggleTheme} sx={{ ml: 2 }}>
             {theme.palette.mode === 'light' ? (
                 <LightModeIcon
-                    sx={{ color: theme.palette.primary.dark, size: 50 }}
+                    sx={{ color: theme.palette.primary.main, size: 50 }}
                 />
             ) : (
                 <DarkModeIcon
-                    sx={{ color: theme.palette.primary.dark, size: 50 }}
+                    sx={{ color: theme.palette.primary.main, size: 50 }}
                 />
             )}
         </IconButton>

@@ -1,6 +1,6 @@
 import { Loader } from '../../components/ui/Loader/Loader.tsx'
 import { Parent } from '../../store/types/types.ts'
-import { useGetParentsQuery } from '../../api/apiSlice/parentsApi.ts'
+import { useGetParentsQuery } from '../../api/parentsApi.ts'
 
 export default function ParentsPage() {
     const { data: parents, isLoading, isError } = useGetParentsQuery()

@@ -13,7 +13,7 @@ export function HomeButton() {
             sx={{
                 display: 'flex',
                 alignItems: 'center',
-                color: theme.palette.primary.dark,
+                color: theme.palette.primary.main,
             }}
         >
             {t('School Manager')}

@@ -1,5 +1,3 @@
-import './App.css'
-
 import { StoreProvider } from './providers/StoreProvider/StoreProvider.tsx'
 import ErrorBoundary from './providers/ErrorBoundary/ErrorBoundary.tsx'
 import { ThemeProvider } from './providers/ThemeProvider/ThemeProvider.tsx'

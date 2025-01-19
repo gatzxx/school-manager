@@ -26,7 +26,7 @@ export function Navigation() {
                         textTransform: 'none',
                         color:
                             location.pathname === item.path
-                                ? theme.palette.primary.dark
+                                ? theme.palette.primary.main
                                 : theme.palette.primary.contrastText,
                     }}
                     to={item.path}

@@ -9,9 +9,10 @@ export function MainSection() {
 
     return (
         <Container
+            disableGutters
             sx={{
                 marginTop: 4,
-                backgroundColor: theme.palette.primary.main,
+                backgroundColor: theme.palette.background.default,
                 color: theme.palette.primary.contrastText,
             }}
         >

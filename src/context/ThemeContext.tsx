@@ -1,5 +1,5 @@
 import { createContext } from 'react'
-import { createAppTheme } from '../../theme/appTheme/appTheme.ts'
+import { createAppTheme } from '../theme/appTheme/appTheme.ts'
 
 export interface ThemeContextProps {
     theme: ReturnType<typeof createAppTheme>
